@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://muneyuki.cn/2023/10/13/%E5%A6%82%E4%BD%95%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://muneyuki.cn/2023/09/20/hello-world/</loc>
     
     <lastmod>2023-10-13</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://muneyuki.cn/2023/09/20/hello-world/</loc>
+    <loc>https://muneyuki.cn/2023/10/13/%E5%A6%82%E4%BD%95%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2023-10-13</lastmod>
     
@@ -29,7 +29,7 @@
 
   
   <url>
-    <loc>https://muneyuki.cn/tags/Hello-World-tag/</loc>
+    <loc>https://muneyuki.cn/tags/hello-world-tag/</loc>
     <lastmod>2023-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -52,7 +52,7 @@
 
   
   <url>
-    <loc>https://muneyuki.cn/categories/Hello-World-cate/</loc>
+    <loc>https://muneyuki.cn/categories/hello-world-cat/</loc>
     <lastmod>2023-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
