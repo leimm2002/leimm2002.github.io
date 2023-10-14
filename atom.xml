@@ -6,7 +6,7 @@
   <link href="https://muneyuki.cn/atom.xml" rel="self"/>
   
   <link href="https://muneyuki.cn/"/>
-  <updated>2023-10-13T15:17:25.541Z</updated>
+  <updated>2023-10-14T08:19:14.558Z</updated>
   <id>https://muneyuki.cn/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git使用系统代理</title>
+    <link href="https://muneyuki.cn/2023/10/14/Git%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86/"/>
+    <id>https://muneyuki.cn/2023/10/14/Git%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86/</id>
+    <published>2023-10-14T07:57:36.000Z</published>
+    <updated>2023-10-14T08:19:14.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>解决<code>Github port 443 : Timed out</code>问题。<br>实际上就是Git使用和系统代理端口未对接的问题。</p><span id="more"></span><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>报错：</p><blockquote><p>Failed to connect to github.com port 443 : Timed out</p></blockquote><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>找到你自己的代理的端口。（我这里是7890）</p><p>然后在<code>Git</code>中输入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy http://127.0.0.1:7890 </span><br><span class="line">git config --global https.proxy http://127.0.0.1:7890</span><br></pre></td></tr></table></figure><p><strong>大功告成！</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;解决&lt;code&gt;Github port 443 : Timed out&lt;/code&gt;问题。&lt;br&gt;实际上就是Git使用和系统代理端口未对接的问题。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://muneyuki.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Git" scheme="https://muneyuki.cn/tags/Git/"/>
+    
+    <category term="Github" scheme="https://muneyuki.cn/tags/Github/"/>
+    
+    <category term="代理" scheme="https://muneyuki.cn/tags/%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>主题和冲突和猪鼻的我</title>
+    <link href="https://muneyuki.cn/2023/10/14/%E4%B8%BB%E9%A2%98%E5%92%8C%E5%86%B2%E7%AA%81%E5%92%8C%E7%8C%AA%E9%BC%BB%E7%9A%84%E6%88%91/"/>
+    <id>https://muneyuki.cn/2023/10/14/%E4%B8%BB%E9%A2%98%E5%92%8C%E5%86%B2%E7%AA%81%E5%92%8C%E7%8C%AA%E9%BC%BB%E7%9A%84%E6%88%91/</id>
+    <published>2023-10-14T07:07:07.000Z</published>
+    <updated>2023-10-14T08:24:32.028Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个猪鼻在某时某刻自己把模块删了然后忘记了最后折腾一下午+一晚上还给人家写了issue的故事。</p><p>警钟长鸣。</p><span id="more"></span><h1 id="エラー発生！"><a href="#エラー発生！" class="headerlink" title="エラー発生！&gt;.&lt;"></a>エラー発生！&gt;.&lt;</h1><p>2023年10月13日，天朗气清，惠风和畅…</p><p>本人在快乐地玩耍博客时，突然发现自己的<code>Archives</code>页面左上的<code>categories（分类）</code>点不了。</p><p>一点就直接进入404页面。</p><blockquote><p><em>好吧要不是这事我都不知道主题作者还做了404页面</em><br><em>u1s1还挺好看的</em></p></blockquote><h1 id="可是"><a href="#可是" class="headerlink" title="可是"></a>可是</h1><p>可是点击<code>tags</code>没有任何问题。</p><p>这到底是为啥？</p><h1 id="百度呗-1"><a href="#百度呗-1" class="headerlink" title="百度呗#1"></a>百度呗#1</h1><blockquote><p><em>虽说是百度，其实用的必应</em></p></blockquote><p>大伙都说是要通过hexo新建page页面。</p><p>输入指令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>然后在生成的文件夹下的<code>index.md</code>文件内写上：（以<code>tags</code>页为例）</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">layout: tags</span><br></pre></td></tr></table></figure><h1 id="试试呗-1"><a href="#试试呗-1" class="headerlink" title="试试呗#1"></a>试试呗#1</h1><p>然后抱了一大堆错。</p><p>指向主题自带的<code>layout</code>下的<code>category</code>文件。</p><p>但是这堆报错我TMD根本看不懂啊。</p><h1 id="百度呗-2"><a href="#百度呗-2" class="headerlink" title="百度呗#2"></a>百度呗#2</h1><p><a href="https://meiweiping.cn/Hexo%EF%BC%9A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3categories%E6%98%BE%E7%A4%BA%E5%88%86%E7%B1%BB%E6%96%87%E4%BB%B6404%E5%87%BA%E9%94%99/">又找到一个</a></p><p>这篇文章的描述和我的问题一模一样。我也是在<code>public</code>文件夹下不会生成<code>categories</code>文件夹。但是有<code>tags</code>文件夹。为啥呢这是？</p><p>不管怎么样，里面记载了方法：</p><blockquote><p>其实就是将所有category文件代码改成Hexo Landscape主题的最原始的代码，即category初始化思路，<br>① 打开 E:~\Hexo\themes\landscape\layout\category.ejs<br>…</p></blockquote><h1 id="试试呗-2"><a href="#试试呗-2" class="headerlink" title="试试呗#2"></a>试试呗#2</h1><p>刚打算试试，然后发现他写的示例是<code>.ejs</code>文件啊。</p><p>我这主题是<code>.pug</code>写的啊。</p><p>虽然这种全部删掉然后写新的的动作已经很让我打退堂鼓了，可是这下格式不一样，怎么也用不了了嘛。</p><h1 id="百度呗-3"><a href="#百度呗-3" class="headerlink" title="百度呗#3"></a>百度呗#3</h1><p>找半天除了上面两种发现没别的活了。</p><p>去hexo和本主题的Github页面也找了，也没有提到相关问题的。</p><p>没办法了，只能动用能99.99999%解决问题的<strong>REMAKE</strong>大法了</p><h1 id="试试呗-3"><a href="#试试呗-3" class="headerlink" title="试试呗#3"></a>试试呗#3</h1><p>我本来觉得是Hexo的问题，但是HULAHULA桑一直在我旁边说</p><blockquote><p>Hexo肯定没问题的啦，肯定是你这主题的问题啦，我怎么没问题了啦，别人怎么都没问题的啦…</p></blockquote><p>好吧，那就当是主题的问题吧。</p><p>遂准备重装一遍主题。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Yue-plus/hexo-theme-arknights.git themes/arknights</span><br></pre></td></tr></table></figure><p>然后…</p><p><strong>我超，这也能报错？</strong></p><blockquote><p>OpenSSL SSL_read: Connection was reset, errno 10054</p></blockquote><p>不是吧阿Sir，我的Git也噶了？</p><h1 id="百度呗-4"><a href="#百度呗-4" class="headerlink" title="百度呗#4"></a>百度呗#4</h1><p><a href="https://blog.csdn.net/wjh1840226173/article/details/124355167">很容易就找到了</a></p><p>似乎不是什么大问题，就是服务器的SSL证书没有经过第三方机构的签署，所以报错。</p><p>虽然不知道为啥（以前咋没这事呢？），但是按照文章里说的禁用了先</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br></pre></td></tr></table></figure><p>反正大不了再开开嘛。</p><p>于是就…又Git失败了。</p><blockquote><p>Github port 443 : Timed out</p></blockquote><p>好吧这次是代理网络问题。</p><p>简单百度一下就好了。</p><p><em>参见：</em> <a href="/2023/10/14/Git%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86/" title="Git使用系统代理">Git使用系统代理</a></p><p>这下终于能如同<em>拉稀</em>一般顺畅地<code>git clone</code>了</p><h1 id="可是…"><a href="#可是…" class="headerlink" title="可是…"></a>可是…</h1><p>还是不行啊！</p><p>重下了一遍主题也没用啊。</p><p>于是重下了一遍Hexo</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>也没用啊！</p><p>于是绝望的我去给主题的Github页面上写issue去了。等个天尊捞捞吧。</p><h1 id="为啥不换主题试试呢？"><a href="#为啥不换主题试试呢？" class="headerlink" title="为啥不换主题试试呢？"></a>为啥不换主题试试呢？</h1><p>突然想起来。</p><p>于是换了一下别的主题。一样的寄。</p><p>好吧这铁定是Hexo的问题了。亏我还去给人家主题写issue了，这下丢大人了。</p><p>刚准备去关闭的时候…</p><h1 id="ﾒ・ん・-？"><a href="#ﾒ・ん・-？" class="headerlink" title="(ﾒ・ん・)？"></a>(ﾒ・ん・)？</h1><p>突然在<code>node_modules</code>文件夹下发现了这几个东西：</p><blockquote><p>hexo-generator-archive<br>hexo-generator-feed<br>hexo-generator-index<br>hexo-generator-sitemap<br>hexo-generator-tag</p></blockquote><p>我靠，这不生成器吗。而且似乎…<strong>怎么只有tag没有categories呢？？</strong></p><p>于是赶紧问了一下在隔壁打古墓丽影卡关了的HULAHULA同学，他那边果然有一个</p><p><strong>hexo-generator-category</strong></p><p>这就对了！但是为啥我没这东西呢？</p><p>突然想起来，之前在搞别的主题的时候似乎删过东西…</p><p><a href="https://github.com/hooozen/hexo-theme-tranquility">致远</a></p><blockquote><p>安装：<br>  移除冲突的依赖，并安装必要依赖:  </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">npm uninstall hexo-generator-category hexo-generator-archive</span>  </span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">npm install hexo-pagination moment opentype.js</span>  </span><br></pre></td></tr></table></figure></blockquote><p>就是这了！</p><p>当初为了安装这个主题，把category生成器卸载了。</p><h1 id="茅厕顿开"><a href="#茅厕顿开" class="headerlink" title="茅厕顿开"></a>茅厕顿开</h1><p>重新安装这两个包：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-category</span><br><span class="line">cnpm install hexo-generator-archive</span><br></pre></td></tr></table></figure><p>然后重新生成，</p><p><strong>解决啦！</strong></p><p>可喜可贺可喜可贺</p><blockquote><p><em>然后仓皇狼狈地去关闭了自己提出的猪鼻issue。</em></p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这是一个猪鼻在某时某刻自己把模块删了然后忘记了最后折腾一下午+一晚上还给人家写了issue的故事。&lt;/p&gt;
+&lt;p&gt;警钟长鸣。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂记" scheme="https://muneyuki.cn/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="踩坑" scheme="https://muneyuki.cn/tags/%E8%B8%A9%E5%9D%91/"/>
+    
+    <category term="猪鼻日记" scheme="https://muneyuki.cn/tags/%E7%8C%AA%E9%BC%BB%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何新写一篇博客</title>
     <link href="https://muneyuki.cn/2023/10/13/%E5%A6%82%E4%BD%95%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>https://muneyuki.cn/2023/10/13/%E5%A6%82%E4%BD%95%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-10-13T08:30:29.000Z</published>
-    <updated>2023-10-13T15:17:25.541Z</updated>
+    <updated>2023-10-13T16:27:02.837Z</updated>
     
     <content type="html"><![CDATA[<h1 id="如何新写一篇博客"><a href="#如何新写一篇博客" class="headerlink" title="如何新写一篇博客"></a>如何新写一篇博客</h1><h2 id="使用hexo指令创建"><a href="#使用hexo指令创建" class="headerlink" title="使用hexo指令创建"></a>使用hexo指令创建</h2><p>在根目录下输入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>即可在创建一个新的页面。</p><h3 id="关于layout字段"><a href="#关于layout字段" class="headerlink" title="关于layout字段"></a>关于layout字段</h3><p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>。在创建这三种不同类型的文件时，它们将会被保存到不同的路径。</p><p>自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p><h4 id="post"><a href="#post" class="headerlink" title="post"></a>post</h4><p>当<code>layout</code>字段缺省时，默认为<code>post</code>，即一般文章。</p><p>此时会在<code>source/_posts</code>文件夹下新建一个文件<code>&lt;title&gt;.md</code>。</p><h4 id="page"><a href="#page" class="headerlink" title="page"></a>page</h4><p><code>page</code>是一个新的页面。某种目录一样，作为一般文章的上级页面。</p><p>创建后会在<code>source</code>文件夹下创建名为<code>&lt;title&gt;</code>的文件夹，其中包含一个<code>index.md</code>。</p><h4 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h4><p><code>draft</code>是草稿。</p><p>这种布局在建立时会被保存到 <code>source/_drafts</code> 文件夹，您可通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹，该命令的使用方式与 <code>new</code> 十分类似，您也可在命令中指定 <code>layout</code> 来指定布局。形如：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>草稿默认不会显示在页面中，可在执行时加上 <code>--draft</code> 参数，或是在 <code>_config.yml</code> 中把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p><h2 id="默认内容"><a href="#默认内容" class="headerlink" title="默认内容"></a>默认内容</h2><p>默认内容在<code>scaffolds</code>文件夹下定义。</p><p>当使用<code>new</code>命令创建时，新建的文件内容将拷贝自此。</p><h2 id="参见"><a href="#参见" class="headerlink" title="参见"></a>参见</h2><p><a href="https://markdown.com.cn/">Markdown语法</a></p><p><a href="https://hexo.io/zh-cn/docs/writing">hexo文档_写作</a></p>]]></content>
     
@@ -43,27 +92,25 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://muneyuki.cn/2023/09/20/hello-world/"/>
-    <id>https://muneyuki.cn/2023/09/20/hello-world/</id>
+    <title>Hexo基本指令</title>
+    <link href="https://muneyuki.cn/2023/09/20/Hexo%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/"/>
+    <id>https://muneyuki.cn/2023/09/20/Hexo%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</id>
     <published>2023-09-20T05:42:49.310Z</published>
-    <updated>2023-10-13T15:19:04.096Z</updated>
+    <updated>2023-10-14T08:23:33.606Z</updated>
     
-    <content type="html"><![CDATA[<p>我的第一篇博客文章！(＾－＾)V~</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>我的第一篇博客文章！(＾－＾)V~<br>耶~</p><span id="more"></span><h1 id="Q快速开始"><a href="#Q快速开始" class="headerlink" title="Q快速开始"></a>Q快速开始</h1><h2 id="创建一个新的文章（Post）"><a href="#创建一个新的文章（Post）" class="headerlink" title="创建一个新的文章（Post）"></a>创建一个新的文章（Post）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多请参见: <a href="https://hexo.io/docs/writing.html">Writing</a><br>以及本博客内：<a href="/2023/10/13/%E5%A6%82%E4%BD%95%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="如何新写一篇博客">如何新写一篇博客</a></p><h2 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>更多请参见: <a href="https://hexo.io/docs/server.html">Server</a></p><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><p>可使用<code>-f</code>参数，强制重新生成。<br>相当于先执行<code>hexo cl</code></p><p>更多请参见: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h2 id="上载"><a href="#上载" class="headerlink" title="上载"></a>上载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>更多请参见: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;我的第一篇博客文章！(＾－＾)V~&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Crea</summary>
-      
+    <summary type="html">&lt;p&gt;我的第一篇博客文章！(＾－＾)V~&lt;br&gt;耶~&lt;/p&gt;</summary>
     
     
     
-    <category term="hello_world_cat" scheme="https://muneyuki.cn/categories/hello-world-cat/"/>
+    <category term="技术" scheme="https://muneyuki.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="hello_world_tag" scheme="https://muneyuki.cn/tags/hello-world-tag/"/>
+    <category term="hexo" scheme="https://muneyuki.cn/tags/hexo/"/>
+    
+    <category term="博客" scheme="https://muneyuki.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
