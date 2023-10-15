@@ -6,7 +6,7 @@
   <link href="https://muneyuki.cn/atom.xml" rel="self"/>
   
   <link href="https://muneyuki.cn/"/>
-  <updated>2023-10-14T08:19:14.558Z</updated>
+  <updated>2023-10-15T12:42:17.831Z</updated>
   <id>https://muneyuki.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>校招信息在哪找</title>
+    <link href="https://muneyuki.cn/2023/10/15/%E6%A0%A1%E6%8B%9B%E4%BF%A1%E6%81%AF%E5%9C%A8%E5%93%AA%E6%89%BE/"/>
+    <id>https://muneyuki.cn/2023/10/15/%E6%A0%A1%E6%8B%9B%E4%BF%A1%E6%81%AF%E5%9C%A8%E5%93%AA%E6%89%BE/</id>
+    <published>2023-10-15T07:13:18.000Z</published>
+    <updated>2023-10-15T12:42:17.831Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道校招信息在哪找啊</p><p>突然想起来在Github上搜了一下</p><p>没想到还真搜出来了</p><p><a href="https://github.com/NAOSI-DLUT/Campus2024">Github-NAOSI-DLUT&#x2F;Campus2024：2024届互联网校招信息汇总</a></p><p>人家还有个专门的网页：</p><p><a href="http://campus2024.top/">2024届互联网校招汇总</a></p><p>就酱。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不知道校招信息在哪找啊&lt;/p&gt;
+&lt;p&gt;突然想起来在Github上搜了一下&lt;/p&gt;
+&lt;p&gt;没想到还真搜出来了&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/NAOSI-DLUT/Campus2024&quot;&gt;Github-NAOSI-DLUT&amp;#x2F;Ca</summary>
+      
+    
+    
+    
+    <category term="杂记" scheme="https://muneyuki.cn/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="校招" scheme="https://muneyuki.cn/tags/%E6%A0%A1%E6%8B%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>Git使用系统代理</title>
