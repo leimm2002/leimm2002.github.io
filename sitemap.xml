@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://muneyuki.cn/2023/10/26/Sincerely/</loc>
+    
+    <lastmod>2023-10-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://muneyuki.cn/2023/10/26/%E5%85%B3%E4%BA%8Ehtml%E5%86%99%E5%81%87%E5%90%8D%E6%B3%A8%E9%9F%B3/</loc>
     
     <lastmod>2023-10-26</lastmod>
@@ -149,6 +158,20 @@
   </url>
   
   <url>
+    <loc>https://muneyuki.cn/tags/%E6%97%A5%E8%AF%AD%E6%AD%8C%E8%AF%8D/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muneyuki.cn/tags/%E5%81%87%E5%90%8D%E6%A0%87%E6%B3%A8/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://muneyuki.cn/tags/hexo/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -177,14 +200,7 @@
   </url>
   
   <url>
-    <loc>https://muneyuki.cn/tags/%E6%97%A5%E8%AF%AD%E6%AD%8C%E8%AF%8D/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muneyuki.cn/tags/%E5%81%87%E5%90%8D%E6%A0%87%E6%B3%A8/</loc>
+    <loc>https://muneyuki.cn/tags/%E5%B0%91%E5%A5%B3%E6%AD%8C%E5%89%A7/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -192,13 +208,6 @@
   
   <url>
     <loc>https://muneyuki.cn/tags/html/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muneyuki.cn/tags/%E5%B0%91%E5%A5%B3%E6%AD%8C%E5%89%A7/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -235,14 +244,14 @@
   </url>
   
   <url>
-    <loc>https://muneyuki.cn/categories/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>https://muneyuki.cn/categories/%E6%97%A5%E8%AF%AD%E6%AD%8C%E8%AF%8D/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://muneyuki.cn/categories/%E6%97%A5%E8%AF%AD%E6%AD%8C%E8%AF%8D/</loc>
+    <loc>https://muneyuki.cn/categories/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
