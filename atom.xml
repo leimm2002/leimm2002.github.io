@@ -6,7 +6,7 @@
   <link href="https://muneyuki.cn/atom.xml" rel="self"/>
   
   <link href="https://muneyuki.cn/"/>
-  <updated>2023-10-26T10:28:18.467Z</updated>
+  <updated>2023-10-26T10:48:12.113Z</updated>
   <id>https://muneyuki.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于html写假名注音</title>
+    <link href="https://muneyuki.cn/2023/10/26/%E5%85%B3%E4%BA%8Ehtml%E5%86%99%E5%81%87%E5%90%8D%E6%B3%A8%E9%9F%B3/"/>
+    <id>https://muneyuki.cn/2023/10/26/%E5%85%B3%E4%BA%8Ehtml%E5%86%99%E5%81%87%E5%90%8D%E6%B3%A8%E9%9F%B3/</id>
+    <published>2023-10-26T10:40:33.000Z</published>
+    <updated>2023-10-26T10:48:12.113Z</updated>
+    
+    <content type="html"><![CDATA[<p>制作假名注音歌词涉及的一些写法</p><p>省得自己忘了</p><span id="more"></span><h1 id="HTML注音符号语法"><a href="#HTML注音符号语法" class="headerlink" title="HTML注音符号语法"></a>HTML注音符号语法</h1><p>markdown自己没有注音相关的语法</p><p>但好在原生支持html</p><p>在html下使用<code>&lt;ruby&gt;</code>标签即可。</p><p>另外考虑到注音假名之易读性，我一般将其大小设置为<code>0.75em</code></p><p>例如：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rb</span>&gt;</span>一番星<span class="tag">&lt;/<span class="name">rb</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rt</span> <span class="attr">style</span>=<span class="string">&quot;font-size:0.75em&quot;</span>&gt;</span>いちばんぼし<span class="tag">&lt;/<span class="name">rt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure><p>其效果如下：<br><ruby><br>    <rb>一番星</rb><br>    <rt style="font-size:0.75em">いちばんぼし</rt><br></ruby></p><p>比较麻烦的是每个注音词都要单写一个</p><p>两首歌就累死我了</p><p>回头找时间写个<code>python</code>脚本罢</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;制作假名注音歌词涉及的一些写法&lt;/p&gt;
+&lt;p&gt;省得自己忘了&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://muneyuki.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="html" scheme="https://muneyuki.cn/tags/html/"/>
+    
+  </entry>
   
   <entry>
     <title>世界は恋に落ちている</title>
